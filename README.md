@@ -57,7 +57,6 @@ Awesome Books is a simple web application that allows users to manage their book
 🚀 Live Demo
 Link to our deployed project.
 
-- https://ahmidou09.github.io/Awesome-books.git
 
 <!-- GETTING STARTED -->
 
