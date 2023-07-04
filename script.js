@@ -19,6 +19,7 @@ class BookList {
 
       const spanTitle = document.createElement('li');
       spanTitle.innerText = `Title: ${book.title}`;
+      spanTitle.classList.add('title');
 
       const spanAuthor = document.createElement('li');
       spanAuthor.innerText = `Author: ${book.author}`;

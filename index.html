@@ -7,20 +7,23 @@
     <title>Awesome books</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Awesome books</h1>
-      <div class="listBooks">
+    <main>
+      <div class="container">
+        <h1>All awesome books</h1>
+        <div class="listBooks">
+        </div>
+        <form class="form">
+          <h2>Add a new Book</h2>
+          <input type="text" class="titleInput" placeholder="Add Title Of Book" />
+          <input
+            type="text"
+            class="authorInput"
+            placeholder="Add Name of Author"
+          />
+          <button class="addButton">Add</button>
+        </form>
       </div>
-      <form class="form">
-        <input type="text" class="titleInput" placeholder="Add Title Of Book" />
-        <input
-          type="text"
-          class="authorInput"
-          placeholder="Add Name of Author"
-        />
-        <button class="addButton">Add</button>
-      </form>
-    </div>
+    </main>
     <script src="./script.js"></script>
   </body>
 </html>
