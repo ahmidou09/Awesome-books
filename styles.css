@@ -36,11 +36,11 @@ h1 {
 
 .book:nth-child(odd) {
   background-color: #eee;
- }
+}
 
-.title{
+.title {
   margin-right: 10px;
- }
+}
 
 form {
   display: flex;
@@ -62,10 +62,10 @@ form {
   padding: 5px 10px;
   margin-top: 5px;
   margin-left: auto;
-  box-shadow: 5px 6px 4px 0px rgba(0,0,0,1);
+  box-shadow: 5px 6px 4px 0 rgba(0, 0, 0, 1);
 }
 
 .addButton {
   padding: 15px 30px;
-  box-shadow: 5px 6px 4px 0px rgba(0,0,0,1);
+  box-shadow: 5px 6px 4px 0 rgba(0, 0, 0, 1);
 }
