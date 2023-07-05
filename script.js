@@ -5,10 +5,15 @@ class BookList {
     this.authorInput = document.querySelector('.authorInput');
     this.listBooks = document.querySelector('.listBooks');
 
+    this.navItems = document.querySelectorAll('.nav__item');
+    this.contentDynamic = document.querySelectorAll('.dynamic');
+
     this.books = JSON.parse(localStorage.getItem('books')) || [];
 
     this.renderBooks();
     this.form.addEventListener('submit', this.handleFormSubmit);
+
+    this.navItems.forEach((link) => link.addEventListener('click', this.handleContent));
   }
 
   renderBooks = () => {
@@ -68,6 +73,17 @@ class BookList {
       this.renderBooks();
     }
   };
+
+   handleContent = (e) => {
+     this.navItems.forEach((link) => link.classList.remove('blue'));
+     this.contentDynamic.forEach((el) => {
+       el.classList.remove('active');
+       if (el.classList.contains(e.currentTarget.dataset.id)) {
+         el.classList.add('active');
+         e.currentTarget.classList.add('blue');
+       }
+     });
+   }
 }
 
 const book = new BookList();
